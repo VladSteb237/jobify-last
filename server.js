@@ -7,6 +7,8 @@ dotenv.config();
 import mongoose from 'mongoose';
 import cookieParser from 'cookie-parser';
 import cloudinary from 'cloudinary';
+import helmet from 'helmet';
+import mongoSanitize from 'express-mongo-sanitize';
 
 // routes
 import jobRouter from './routes/jobRouter.js';
@@ -35,10 +37,8 @@ if (process.env.NODE_ENV === 'development') {
 app.use(express.static(path.resolve(__dirname, './client/dist')));
 app.use(cookieParser());
 app.use(express.json());
-
-app.get('/api/v1/test', function (req, res) {
-    res.json({ msg: 'test route' })
-});
+app.use(helmet());
+app.use(mongoSanitize());
 
 // GET ALL JOBS from routes
 app.use('/api/v1/jobs', authenticateUser, jobRouter);

@@ -110,52 +110,54 @@ h5 {
     letter-spacing: var(--letter-spacing);
 }
 
-h1 {
-    font-size: clamp(2rem, 5vw, 5rem);
-    /* Large heading */
-}
+/* LOWER FONTS */
 
-h2 {
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    /* Medium heading */
-}
+/* Large heading */
+/* h1 {
+    font-size: clamp(2rem, 5vw, 5rem);   
+} */
 
-h3 {
-    font-size: clamp(1.25rem, 2.5vw, 2.5rem);
-    /* Small heading */
-}
+/* Medium heading */
+/* h2 {
+    font-size: clamp(1.5rem, 3vw, 3rem);   
+} */
 
-h4 {
-    font-size: clamp(1rem, 2vw, 2rem);
-    /* Extra small heading */
-}
+/* Small heading */
+/* h3 {
+    font-size: clamp(1.25rem, 2.5vw, 2.5rem);   
+} */
 
-h5 {
-    font-size: clamp(0.875rem, 1.5vw, 1.5rem);
-    /* Tiny heading */
-}
+/* Extra small heading */
+/* h4 {
+    font-size: clamp(1rem, 2vw, 2rem);   
+} */
+
+/* Tiny heading */
+/* h5 {
+    font-size: clamp(0.875rem, 1.5vw, 1.5rem);   
+} */
 
 /* BIGGER FONTS */
-/* h1 {
-  font-size: clamp(3rem, 6vw, 6rem);
+h1 {
+    font-size: clamp(3rem, 6vw, 6rem);
 }
 
 h2 {
-  font-size: clamp(2.5rem, 5vw, 5rem);
+    font-size: clamp(2.5rem, 5vw, 5rem);
 }
 
 h3 {
-  font-size: clamp(2rem, 4vw, 4rem);
+    font-size: clamp(2rem, 4vw, 4rem);
 }
 
 h4 {
-  font-size: clamp(1.5rem, 3vw, 3rem);
+    font-size: clamp(1.5rem, 3vw, 3rem);
 }
 
 h5 {
-  font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 2vw, 2rem);
 }
- */
+
 
 .text {
     margin-bottom: 1.5rem;
